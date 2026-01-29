@@ -1,0 +1,10 @@
+# Ignorar dados brutos (NUNCA suba arquivos grandes ou senhas)
+dados/
+*.csv
+*.xlsx
+
+# Ignorar arquivos de sistema e cache
+__pycache__/
+*.DS_Store
+.env
+venv/
