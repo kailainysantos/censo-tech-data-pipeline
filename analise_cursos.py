@@ -10,13 +10,9 @@ print(f"📂 Lendo: {arquivo_csv}")
 start_time = time.time()
 con = duckdb.connect()
 
-# ---------------------------------------------------------
-# A QUERY PARA O ARQUIVO DE CURSOS
-# ---------------------------------------------------------
 # NO_CINE_ROTULO: Nome padronizado do curso
 # QT_MAT: Quantidade de alunos matriculados naquele curso
 # TP_REDE: 1 = Pública, 2 = Privada
-
 query = f"""
     SELECT 
         NO_CINE_ROTULO as Nome_Curso,
