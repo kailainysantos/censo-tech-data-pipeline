@@ -1,4 +1,4 @@
-# 📊 Censo Tech Analytics: Pipeline de Dados Educacionais
+# Censo Tech Analytics: Pipeline de Dados Educacionais
 
 ![Badge Status](http://img.shields.io/static/v1?label=STATUS\&message=CONCLUIDO\&color=GREEN\&style=for-the-badge)
 ![Badge Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge\&logo=python)
@@ -9,7 +9,7 @@
 
 ---
 
-## 📑 Índice
+## Índice
 
 * [Sobre o Projeto](#sobre)
 * [O Desafio Técnico](#desafio)
@@ -22,7 +22,7 @@
 
 ---
 
-## <a id="sobre"></a>🧐 Sobre o Projeto
+## <a id="sobre"></a> Sobre o Projeto
 
 O **Censo Tech Analytics** é uma solução de *Data Engineering* criada para mapear o cenário da educação superior em Tecnologia no Brasil. O projeto ingere dados reais e brutos do governo para responder questões de negócio sobre a oferta de cursos (Engenharia de Dados, Ciência da Computação, SI) e a predominância do ensino privado versus público.
 
@@ -30,7 +30,7 @@ Os dados utilizados são oficiais, provenientes do [Portal de Dados Abertos do I
 
 ---
 
-## <a id="desafio"></a>⚡ O Desafio Técnico
+## <a id="desafio"></a> O Desafio Técnico
 
 Os arquivos de microdados do Censo (dataset `MICRODADOS_CADASTRO_CURSOS`) possuem estrutura complexa e alta volumetria.
 A abordagem tradicional de carregar todo o dataset em memória (ex: Pandas puro `read_csv`) em hardware convencional (Notebook i5, 12GB RAM) é inviável para processamento ágil, frequentemente causando travamentos.
@@ -71,7 +71,7 @@ GROUP BY Nome_Curso, Tipo_Faculdade
 ORDER BY Total_Alunos DESC
 ```
 
-## <a id="tech"></a>🧰 Tecnologias Utilizadas
+## <a id="tech"></a> Tecnologias Utilizadas
 
 As ferramentas foram escolhidas com foco em **performance**, **simplicidade** e **reprodutibilidade** do pipeline:
 
@@ -95,7 +95,7 @@ As etapas de desenvolvimento foram organizadas e rastreadas via **GitHub Project
 
 ---
 
-## <a id="resultados"></a>📊 Resultados e Visualização
+## <a id="resultados"></a> Resultados e Visualização
 
 O pipeline gerou com sucesso uma análise do mercado educacional de cursos de Tecnologia no Brasil. O gráfico final é produzido automaticamente a partir dos dados processados pelo DuckDB e refinados em Python.
 
@@ -105,7 +105,7 @@ O pipeline gerou com sucesso uma análise do mercado educacional de cursos de Te
 
 ---
 
-## <a id="executar"></a>💻 Como Executar
+## <a id="executar"></a> Como Executar
 
 ### Pré-requisitos
 
